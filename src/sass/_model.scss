@@ -1,0 +1,70 @@
+$phoneMax: 640px;
+$tabletMax: 768px;
+$desktopMax: 1024px;
+@mixin mQ($arg) {
+  @media screen and (max-width: $arg) {
+    @content;
+  }
+}
+
+.modal-content {
+  flex-direction: row;
+}
+cardimagearea.cardImageArea.modalCardImageArea {
+  height: 40%;
+}
+.modalBox {
+  display: flex !important;
+  align-items: center;
+  @include mQ($phoneMax) {
+    display: block !important;
+  }
+  .modal-dialog {
+    @media (min-width: 576px) {
+      max-width: 650px;
+      margin: 1.75rem auto;
+    }
+    .modal-body {
+      width: 35%;
+      display: flex;
+      flex-direction: column;
+      .cardImages {
+        @media (max-width: 576px) {
+          width: 150%;
+        }
+      }
+    }
+    .modal-header {
+      border-bottom: unset;
+      display: flex;
+      flex-direction: column-reverse;
+      width: 65%;
+    }
+  }
+  .modalCardTitle {
+    overflow: unset !important;
+    -webkit-line-clamp: unset !important;
+    // word-break: break-all;
+    // white-space: break-spaces;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 10px;
+    height: 35%;
+  }
+
+  .modalPluse {
+    display: flex;
+    justify-content: center;
+    height: 25%;
+    margin: 20px;
+    counternumber {
+      place-items: flex-end;
+    }
+    .pluseCircle,
+    counterBox {
+      position: unset !important;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

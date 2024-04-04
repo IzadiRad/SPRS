@@ -1,0 +1,53 @@
+.slidebar-cards {
+  display: flex;
+  flex-direction: column;
+}
+.slidebar-card {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  margin: 5px;
+  color: black;
+  border-radius: 10%;
+  min-height: 20vh;
+  max-height: 20vh;
+}
+.slidebar-imageArea {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  align-items: center;
+  img.slidebar-cardImages {
+    // width: 55%;
+    padding: 10px;
+    height: 65%;
+  }
+}
+.positionOfslidebar-delete {
+  margin-top: 10px;
+  .slidebar-delete {
+    cursor: pointer;
+    color: white;
+    height: 21px;
+    width: 21px;
+    background-color: #bbbbbb8f;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.pluse > .slidebar-pluseCircle,
+.slidebar-ReCounterBox {
+  position: unset !important;
+}
+.slidebar-bodyArea {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: center;
+  padding: 35px 0 10px 0;
+  align-self: center;
+  place-items: center;
+  position: relative;
+}
