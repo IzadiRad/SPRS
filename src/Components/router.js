@@ -11,7 +11,7 @@ const Router = () => {
         <Navbar className="App-header" />
         <main>
           <Switch>
-            <Route path="/"  component={Home} />
+            <Route path="/" component={Home} />
             <Route path="/*" exact component={PageNotFind} />
           </Switch>
         </main>

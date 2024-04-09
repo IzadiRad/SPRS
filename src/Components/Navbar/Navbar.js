@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Logo } from "./Navbar.jsx";
+import { Logo } from "./NavBar.jsx";
 import { Link } from "react-router-dom";
 import SlideBar from "../Slidebar/SlideBar";
 import { useReducePriceState } from "../../Providers/Providers.js";
@@ -10,7 +10,7 @@ const Navbar = () => {
   const showSidebar = () => setSidebar(!sidebar);
 
   function enableScroll() {
-    window.onscroll = function () {};
+    window.onscroll = function () { };
   }
   function disableScroll() {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -42,8 +42,8 @@ const Navbar = () => {
           className="menuLinks githubLink"
         >
           <div className="github-icon">
-          {/* <i class="fa fa-github" aria-hidden="true" >Github</i> */}
-          <img src={github} alt="github" />
+            {/* <i class="fa fa-github" aria-hidden="true" >Github</i> */}
+            <img src={github} alt="github" />
           </div>
         </a>
         <Link to="#" className="menuLinks ">
